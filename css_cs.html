@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/themes/classic.min.css"
+    />
+    <link rel="stylesheet" href="css_cs.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <title>CSS CHEATSHEET</title>
+  </head>
+  
+  <body>
+
+    <header>
+      <nav class="navbar">
+        <h1 class="nav-branding">LEONA ILAO</h1>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="index.html#home" target="_blank">HOME</a>
+          </li>
+          <li class="nav-item dropdown">
+            <p class="dropdown_btn">EXPERIENCE</p>
+            <div class="links hide-dd">
+              <a href="index.html#exp" target="_blank">WORK EXPERIENCE</a>
+              <a href="index.html#tp" target="_blank">TECHNICAL PROFICIENCIES</a>
+              <a href="index.html#cert" target="_blank">CERTIFICATION</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#educ" target="_blank">EDUCATION</a>
+          </li>
+          <li class="nav-item">
+            <a href="index.html#contact" target="_blank">CONTACT</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a href="css_cs.html" target="_blank">Cheat Sheet</a>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="main-group">
+        <img src="assets/images/css-logo.png" alt="" />
+        <h1>CSS CHEATSHEET</h1>
+      </div>
+    </main>
+    <section class="grid-parent container">
+      <div class="grid-item grid-1">
+        <div class="title">
+          <h5>Color Picker</h5>
+        </div>
+        <div class="content">
+          <div class="panel" id="panel"></div>
+          <div class="color-container">
+            <span>Click to pick a color: </span>
+            <div class="color-picker"></div>
+          </div>
+        </div>
+        <div class="grid-items">
+          <div class="title">
+            <h5>Useful Links</h5>
+          </div>
+          <div class="content">
+            <div class="links2">
+              <a href="https://csseditor.com/" target="_blank" rel="nofollow"
+                >CSS Editor, Compressor</a
+              >
+              <a
+                href="https://html-cleaner.com/css/"
+                target="_blank"
+                rel="nofollow"
+                >CSS Cleaner</a
+              >
+              <a href="https://caniuse.com/" target="_blank" rel="nofollow"
+                >Can I Use?</a
+              >
+              <a href="https://modernizr.com/" target="_blank" rel="nofollow"
+                >Modernizr</a
+              >
+              <a href="https://getbootstrap.com/" target="_blank" rel="nofollow"
+                >Bootstrap</a
+              >
+              <a
+                href="https://jigsaw.w3.org/css-validator/"
+                target="_blank"
+                rel="nofollow"
+                >Validator</a
+              >
+              <a
+                href="https://divtable.com/table-styler/"
+                target="_blank"
+                rel="nofollow"
+                >Table CSS Styler</a
+              >
+              <a
+                href="https://www.w3schools.com/css/css_intro.asp"
+                target="_blank"
+                rel="nofollow"
+                >CSS Introduction</a
+              >
+              <a
+                href="https://colorhunt.co/palettes/popular"
+                target="_blank"
+                rel="nofollow"
+                >Color Hunt</a
+              >
+              <a
+                href="https://www.freecodecamp.org/news/css-selectors-cheat-sheet-for-beginners/"
+                target="_blank"
+                rel="nofollow"
+                >CSS Selectors</a
+              >
+              <a
+                href="https://www.w3schools.com/cssref/css_websafe_fonts.php"
+                target="_blank"
+                rel="nofollow"
+                >CSS Web Safe Fonts</a
+              >
+              <a
+                href="https://apps.timwhitlock.info/emoji/tables/unicode"
+                target="_blank"
+                rel="nofollow"
+                >Emoji Unicode tables</a
+              >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item grid-2">
+        <div class="title">
+          <h5>CSS Basics</h5>
+        </div>
+        <div class="content">
+          <p class="div-section">Syntax</p>
+          <pre
+            style="color: #000"
+            id="selectable1"
+          > <span style="font-weight:700">selector</span>{
+   <span style="color:#6d79de;font-weight:700">property</span>: <span style="color:#c5060b;font-style:italic">value</span>;
+   <span style="color:#6d79de;font-weight:700">property2</span>: <span style="color:#c5060b;font-style:italic">value2</span>;
+   }
+          </pre>
+          <p class="div-section">Include external css file</p>
+          <pre
+            style="color: #000"
+            id="selectable2"
+          > <span style="color:#1c02ff">&lt;<span style="font-weight:700">link</span> <span style="font-style:italic">rel</span>=<span style="color:#d80800">"stylesheet"</span> 
+          <span style="font-style:italic">type</span>=<span style="color:#d80800">"text/css"</span> <span style="font-style:italic">href</span>=<span style="color:#d80800">"/style.css"</span> /&gt;</span>
+          </pre>
+          <p class="div-section">Inline styles</p>
+          <pre
+            style="color: #000"
+            id="selectable4"
+            onclick='selectText("selectable4")'
+          > <span style="color:#1c02ff">&lt;<span style="font-weight:700">tag</span> <span style="font-style:italic">style</span>=<span style="color:#d80800">"property: value"</span>&gt;</span> <span style="color:#1c02ff">&lt;/<span style="font-weight:700">tag</span>&gt;</span>
+          </pre>
+          <p class="div-section">Clearfix</p>
+          <pre
+            id="selectable5"
+            onclick='selectText("selectable5")'
+          > <span style="color:#808030; ">.</span>clearfix<span style="color:#800080; ">:</span><span style="color:#800000; font-weight:bold; ">after</span> <span style="color:#800080; ">{</span>
+ <span style="color:#bb7977; font-weight:bold; ">clear</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">both</span><span style="color:#800080; ">;</span>
+ <span style="color:#bb7977; font-weight:bold; ">content</span><span style="color:#808030; ">:</span> <span style="color:#800000; ">"</span><span style="color:#0000e6; "> </span><span style="color:#800000; ">"</span><span style="color:#800080; ">;</span>
+ <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">block</span><span style="color:#800080; ">;</span>
+ <span style="color:#bb7977; font-weight:bold; ">font-size</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">height</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">0</span><span style="color:#800080; ">;</span>
+  <span style="color:#bb7977; font-weight:bold; ">visibility</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">hidden</span><span style="color:#800080; ">;</span>
+  <span style="color:#800080; ">}</span>
+  <span style="color:#808030; ">.</span>clearfix <span style="color:#800080; ">{</span> <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">inline-block</span><span style="color:#800080; ">;</span> <span style="color:#800080; ">}</span>
+  <span style="color:#808030; ">*</span> <span style="color:#800000; font-weight:bold; ">html</span> <span style="color:#808030; ">.</span>clearfix <span style="color:#800080; ">{</span> <span style="color:#bb7977; font-weight:bold; ">height</span><span style="color:#808030; ">:</span> <span style="color:#008c00; ">1</span><span style="color:#006600; ">%</span><span style="color:#800080; ">;</span> <span style="color:#800080; ">}</span>
+  <span style="color:#808030; ">.</span>clearfix <span style="color:#800080; ">{</span> <span style="color:#bb7977; font-weight:bold; ">display</span><span style="color:#808030; ">:</span> <span style="color:#074726; ">block</span><span style="color:#800080; ">;</span> <span style="color:#800080; ">}</span>
+          </pre>
+          <p class="div-section">Box model</p>
+          <div id="boxmodel">
+            margin
+            <div class="border">
+              border
+              <div class="padding">
+                padding
+                <div class="content">content</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item grid-3">
+        <div class="title">
+          <h5>Selectors</h5>
+        </div>
+        <div class="content">
+          <div class="panelInner">
+            <div class="descriptionListing noscroller">
+              <div>
+                <span id="selectableSpan13">* </span><em>all elements</em>
+              </div>
+              <div>
+                <span id="selectableSpan14">div </span><em>all div tags </em>
+              </div>
+              <div>
+                <span id="selectableSpan15">div,p </span
+                ><em>all divs and paragraphs </em>
+              </div>
+              <div>
+                <span id="selectableSpan16">div p </span
+                ><em>paragraphs inside divs </em>
+              </div>
+              <div>
+                <span id="selectableSpan17">div &gt; p </span
+                ><em>all p tags, one level deep in div</em>
+              </div>
+              <div>
+                <span id="selectableSpan18">div + p </span
+                ><em>p tags immediately after div</em>
+              </div>
+              <div>
+                <span id="selectableSpan19">div ~ p </span
+                ><em>p tags preceded by div</em>
+              </div>
+              <div>
+                <span id="selectableSpan20">.classname </span
+                ><em>all elements with class </em>
+              </div>
+              <div>
+                <span id="selectableSpan21">#idname </span
+                ><em>element with ID </em>
+              </div>
+              <div>
+                <span id="selectableSpan22">div.classname </span
+                ><em>divs with certain classname</em>
+              </div>
+              <div>
+                <span id="selectableSpan23">div#idname </span
+                ><em>div with certain ID </em>
+              </div>
+              <div>
+                <span id="selectableSpan24">#idname * </span
+                ><em>all elements inside #idname</em>
+              </div>
+            </div>
+            <p class="div-section">Pseudo classes</p>
+            <div class="descriptionListing">
+              <div>
+                <span id="selectableSpan25">a:link </span
+                ><em>link in normal state</em>
+              </div>
+              <div>
+                <span id="selectableSpan26">a:active </span
+                ><em>link in clicked state</em>
+              </div>
+              <div>
+                <span id="selectableSpan27">a:hover </span
+                ><em>link with mouse over it</em>
+              </div>
+              <div>
+                <span id="selectableSpan28">a:visited </span
+                ><em>visited link</em>
+              </div>
+              <div>
+                <span id="selectableSpan29">p::after{content:"yo";}</span
+                ><em>add content after p </em>
+              </div>
+              <div>
+                <span id="selectableSpan30">p::before </span
+                ><em>add content before p </em>
+              </div>
+              <div>
+                <span id="selectableSpan31">input:checked </span
+                ><em>checked inputs </em>
+              </div>
+              <div>
+                <span id="selectableSpan32">input:disabled </span
+                ><em>disabled inputs </em>
+              </div>
+              <div>
+                <span id="selectableSpan33">input:enabled </span
+                ><em>enabled inputs </em>
+              </div>
+              <div>
+                <span id="selectableSpan34">input:focus </span
+                ><em>input has focus </em>
+              </div>
+              <div>
+                <span id="selectableSpan35">input:in-range </span
+                ><em>value in range </em>
+              </div>
+              <div>
+                <span id="selectableSpan36">input:out-of-range </span
+                ><em>input value out of range </em>
+              </div>
+              <div>
+                <span id="selectableSpan37">input:valid </span
+                ><em>input with valid value </em>
+              </div>
+              <div>
+                <span id="selectableSpan38">input:invalid </span
+                ><em>input with invalid value </em>
+              </div>
+              <div>
+                <span id="selectableSpan39">input:optional </span
+                ><em>no required attribute </em>
+              </div>
+              <div>
+                <span id="selectableSpan40">input:required </span
+                ><em>input with requred attribute </em>
+              </div>
+              <div>
+                <span id="selectableSpan41">input:read-only </span
+                ><em>with readonly attribute </em>
+              </div>
+              <div>
+                <span id="selectableSpan42">input:read-write </span
+                ><em>no readonly attrib. </em>
+              </div>
+              <div>
+                <span id="selectableSpan43">div:empty </span
+                ><em>element with no children </em>
+              </div>
+              <div>
+                <span id="selectableSpan44">p::first-letter </span
+                ><em>first letter in p </em>
+              </div>
+              <div>
+                <span id="selectableSpan45">p::first-line </span
+                ><em>first line in p </em>
+              </div>
+              <div>
+                <span id="selectableSpan46">p:first-of-type </span
+                ><em>first of some type </em>
+              </div>
+              <div>
+                <span id="selectableSpan47">p:last-of-type </span
+                ><em>last of some type </em>
+              </div>
+              <div>
+                <span id="selectableSpan48">p:lang(en) </span
+                ><em>p with en language attribute </em>
+              </div>
+              <div>
+                <span id="selectableSpan49">:not(span) </span
+                ><em>element that's not a span </em>
+              </div>
+              <div>
+                <span id="selectableSpan50">p:first-child </span
+                ><em>first child of its parent </em>
+              </div>
+              <div>
+                <span id="selectableSpan51">p:last-child </span
+                ><em>last child of its parent </em>
+              </div>
+              <div>
+                <span id="selectableSpan52">p:nth-child(2) </span
+                ><em>second child of its parent </em>
+              </div>
+              <div>
+                <span id="selectableSpan53">p:nth-child(3n+1) </span
+                ><em>nth-child (an + b) formula</em>
+              </div>
+              <div>
+                <span id="selectableSpan54">p:nth-last-child(2) </span
+                ><em>second child from behind </em>
+              </div>
+              <div>
+                <span id="selectableSpan55">p:nth-of-type(2) </span
+                ><em>second p of its parent </em>
+              </div>
+              <div>
+                <span id="selectableSpan56">p:nth-last-of-type(2) </span
+                ><em>...from behind </em>
+              </div>
+              <div>
+                <span id="selectableSpan57">p:only-of-type </span
+                ><em>unique of its parent</em>
+              </div>
+              <div>
+                <span id="selectableSpan58">p:only-child </span
+                ><em>only child of its parent</em>
+              </div>
+              <div>
+                <span id="selectableSpan59">:root </span
+                ><em>documents root element </em>
+              </div>
+              <div>
+                <span id="selectableSpan60">::selection </span
+                ><em>portion selected by user </em>
+              </div>
+              <div>
+                <span id="selectableSpan61">:target </span
+                ><em>highlight active anchor </em>
+              </div>
+            </div>
+            <p class="div-section">Attribute selectors</p>
+            <div class="descriptionListing noscroller">
+              <div>
+                <span id="selectableSpan62">a[target]</span
+                ><em>links with a target attribute </em>
+              </div>
+              <div>
+                <span id="selectableSpan63">a[target="_blank"] </span
+                ><em>links which open in new tab </em>
+              </div>
+              <div>
+                <span id="selectableSpan64">[title~="chair"] </span
+                ><em>title element containing a word </em>
+              </div>
+              <div>
+                <span id="selectableSpan65">[class^="chair"] </span
+                ><em>class starts with chair </em>
+              </div>
+              <div>
+                <span id="selectableSpan66">[class|="chair"] </span
+                ><em>class starts with the chair word </em>
+              </div>
+              <div>
+                <span id="selectableSpan67">[class*="chair"] </span
+                ><em>class contains chair </em>
+              </div>
+              <div>
+                <span id="selectableSpan68">[class$="chair"] </span
+                ><em>class ends with chair </em>
+              </div>
+              <div>
+                <span id="selectableSpan69">input[type="button"] </span
+                ><em>specified input type </em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item grid-4">
+        <div class="title">
+          <h5>Properties</h5>
+        </div>
+        <div class="content">
+          <div class="panelInner">
+            <div class="descriptionListing">
+              <div>
+                <span id="selectableSpan70">align-content</span
+                ><em>behavior of the flex-wrap property </em>
+              </div>
+              <div>
+                <span id="selectableSpan71">align-items</span
+                ><em>alignment for items inside the container </em>
+              </div>
+              <div>
+                <span id="selectableSpan72">align-self</span
+                ><em>alignment for the selected item </em>
+              </div>
+              <div>
+                <span id="selectableSpan73">all</span
+                ><em>changes all properties </em>
+              </div>
+              <div>
+                <span id="selectableSpan74">animation</span
+                ><em>binds an animation to an element </em>
+              </div>
+              <div>
+                <span id="selectableSpan75">animation-delay</span
+                ><em>delays animation start </em>
+              </div>
+              <div>
+                <span id="selectableSpan76">animation-direction</span
+                ><em>reverse animation or in alternate cycles </em>
+              </div>
+              <div>
+                <span id="selectableSpan77">animation-duration</span
+                ><em>animation duration in seconds or ms </em>
+              </div>
+              <div>
+                <span id="selectableSpan78">animation-fill-mode</span
+                ><em>style when the animation is not playing </em>
+              </div>
+              <div>
+                <span id="selectableSpan79">animation-iteration-count</span
+                ><em>number of an animation replays </em>
+              </div>
+              <div>
+                <span id="selectableSpan80">animation-name</span
+                ><em>name for the @keyframes animation </em>
+              </div>
+              <div>
+                <span id="selectableSpan81">animation-play-state</span
+                ><em>the animation is running or paused </em>
+              </div>
+              <div>
+                <span id="selectableSpan82">animation-timing-function</span
+                ><em>speed curve of an animation </em>
+              </div>
+              <div>
+                <span id="selectableSpan83">backface-visibility</span
+                ><em>is element visible when not facing the screen </em>
+              </div>
+              <div>
+                <span id="selectableSpan84">background</span
+                ><em>all background properties in one declaration </em>
+              </div>
+              <div>
+                <span id="selectableSpan85">background-attachment</span
+                ><em>is the background image fixed or scrolls</em>
+              </div>
+              <div>
+                <span id="selectableSpan86">background-blend-mode</span
+                ><em>blending mode of each background layer </em>
+              </div>
+              <div>
+                <span id="selectableSpan87">background-clip</span
+                ><em>painting area of the background </em>
+              </div>
+              <div>
+                <span id="selectableSpan88">background-color</span
+                ><em>background color </em>
+              </div>
+              <div>
+                <span id="selectableSpan89">background-image</span
+                ><em>background image </em>
+              </div>
+              <div>
+                <span id="selectableSpan90">background-origin</span
+                ><em>where the background image is positioned </em>
+              </div>
+              <div>
+                <span id="selectableSpan91">background-position</span
+                ><em>starting position of the background image </em>
+              </div>
+              <div>
+                <span id="selectableSpan92">background-repeat</span
+                ><em>the way the background image is repeated </em>
+              </div>
+              <div>
+                <span id="selectableSpan93">background-size</span
+                ><em>background image size </em>
+              </div>
+              <div>
+                <span id="selectableSpan94">border</span
+                ><em>sets all border properties in one line </em>
+              </div>
+              <div>
+                <span id="selectableSpan95">border-bottom</span
+                ><em>bottom border properties in one line </em>
+              </div>
+              <div>
+                <span id="selectableSpan96">border-bottom-color</span
+                ><em>color of the bottom border</em>
+              </div>
+              <div>
+                <span id="selectableSpan97">border-bottom-left-radius</span
+                ><em>border bottom left radius </em>
+              </div>
+              <div>
+                <span id="selectableSpan98">border-bottom-right-radius</span
+                ><em>border bottom right radius </em>
+              </div>
+              <div>
+                <span id="selectableSpan99">border-bottom-style</span
+                ><em>border bottom style </em>
+              </div>
+              <div>
+                <span id="selectableSpan100">border-bottom-width</span
+                ><em>border bottom width</em>
+              </div>
+              <div>
+                <span id="selectableSpan101">border-collapse</span
+                ><em>border collapse</em>
+              </div>
+              <div>
+                <span id="selectableSpan102">border-color</span
+                ><em>border color </em>
+              </div>
+              <div>
+                <span id="selectableSpan103">border-image</span
+                ><em>sets an image as border</em>
+              </div>
+              <div>
+                <span id="selectableSpan104">border-image-outset</span
+                ><em>border image area extends beyond the border box </em>
+              </div>
+              <div>
+                <span id="selectableSpan105">border-image-repeat</span
+                ><em>border image repeated, rounded or stretched</em>
+              </div>
+              <div>
+                <span id="selectableSpan106">border-image-slice</span
+                ><em>how to slice the border image </em>
+              </div>
+              <div>
+                <span id="selectableSpan107">border-image-source</span
+                ><em>path to the border image </em>
+              </div>
+              <div>
+                <span id="selectableSpan108">border-image-width</span
+                ><em>border image width </em>
+              </div>
+              <div>
+                <span id="selectableSpan109">border-left</span
+                ><em>left border properties in one line </em>
+              </div>
+              <div>
+                <span id="selectableSpan110">border-left-color</span
+                ><em>border left color </em>
+              </div>
+              <div>
+                <span id="selectableSpan111">border-left-style</span
+                ><em>border left style </em>
+              </div>
+              <div>
+                <span id="selectableSpan112">border-left-width</span
+                ><em>border left width </em>
+              </div>
+              <div>
+                <span id="selectableSpan113">border-radius</span
+                ><em>border radius of the four rounded corners</em>
+              </div>
+              <div>
+                <span id="selectableSpan114">border-right</span
+                ><em>right border properties in one line </em>
+              </div>
+              <div>
+                <span id="selectableSpan115">border-right-color</span
+                ><em>border right color </em>
+              </div>
+              <div>
+                <span id="selectableSpan116">border-right-style</span
+                ><em>border right style </em>
+              </div>
+              <div>
+                <span id="selectableSpan117">border-right-width</span
+                ><em>border right width </em>
+              </div>
+              <div>
+                <span id="selectableSpan118">border-spacing</span
+                ><em>border spacing </em>
+              </div>
+              <div>
+                <span id="selectableSpan119">border-style</span
+                ><em>border style </em>
+              </div>
+              <div>
+                <span id="selectableSpan120">border-top</span
+                ><em>top border properties in one line </em>
+              </div>
+              <div>
+                <span id="selectableSpan121">border-top-color</span
+                ><em>border top color </em>
+              </div>
+              <div>
+                <span id="selectableSpan122">border-top-left-radius</span
+                ><em>border top left radius </em>
+              </div>
+              <div>
+                <span id="selectableSpan123">border-top-right-radius</span
+                ><em>border top right radius </em>
+              </div>
+              <div>
+                <span id="selectableSpan124">border-top-style</span
+                ><em>border top style </em>
+              </div>
+              <div>
+                <span id="selectableSpan125">border-top-width</span
+                ><em>border top width </em>
+              </div>
+              <div>
+                <span id="selectableSpan126">border-width</span
+                ><em>border width </em>
+              </div>
+              <div>
+                <span id="selectableSpan127">bottom</span
+                ><em>bottom offset for relative and absolute elements </em>
+              </div>
+              <div>
+                <span id="selectableSpan128">box-shadow</span
+                ><em>shadow to element </em>
+              </div>
+              <div>
+                <span id="selectableSpan129">box-sizing</span
+                ><em>box sizing properties</em>
+              </div>
+              <div>
+                <span id="selectableSpan130">caption-side</span
+                ><em>placement of a table caption </em>
+              </div>
+              <div>
+                <span id="selectableSpan131">clear</span
+                ><em>deny floating of an element </em>
+              </div>
+              <div>
+                <span id="selectableSpan132">clip</span
+                ><em>clip an absolutely positioned element </em>
+              </div>
+              <div>
+                <span id="selectableSpan133">color</span><em>text color</em>
+              </div>
+              <div>
+                <span id="selectableSpan134">column-count</span
+                ><em>divide the content in columns</em>
+              </div>
+              <div>
+                <span id="selectableSpan135">column-fill</span
+                ><em>balanced fill or not </em>
+              </div>
+              <div>
+                <span id="selectableSpan136">column-gap</span
+                ><em>gap between the columns </em>
+              </div>
+              <div>
+                <span id="selectableSpan137">column-rule</span
+                ><em>separator between columns, like border </em>
+              </div>
+              <div>
+                <span id="selectableSpan138">column-rule-color</span
+                ><em>column rule color </em>
+              </div>
+              <div>
+                <span id="selectableSpan139">column-rule-style</span
+                ><em>column rule style </em>
+              </div>
+              <div>
+                <span id="selectableSpan140">column-rule-width</span
+                ><em>column rule width </em>
+              </div>
+              <div>
+                <span id="selectableSpan141">column-span</span
+                ><em> column span</em>
+              </div>
+              <div>
+                <span id="selectableSpan142">column-width</span
+                ><em>column width </em>
+              </div>
+              <div>
+                <span id="selectableSpan143">columns</span
+                ><em>set column-width and column-count </em>
+              </div>
+              <div>
+                <span id="selectableSpan144">content</span
+                ><em>insert content :before and :after elements </em>
+              </div>
+              <div>
+                <span id="selectableSpan145">counter-increment</span
+                ><em>count sections </em>
+              </div>
+              <div>
+                <span id="selectableSpan146">counter-reset</span
+                ><em>reset counter </em>
+              </div>
+              <div>
+                <span id="selectableSpan147">cursor</span
+                ><em>cursor type when element is hovered </em>
+              </div>
+              <div>
+                <span id="selectableSpan148">direction</span
+                ><em>writing direction, Arabic is using rtl </em>
+              </div>
+              <div>
+                <span id="selectableSpan149">display</span
+                ><em>box display type </em>
+              </div>
+              <div>
+                <span id="selectableSpan150">empty-cells</span
+                ><em>hide borders and background on empty table cells </em>
+              </div>
+              <div>
+                <span id="selectableSpan151">filter</span
+                ><em>image effects: grayscale, blur, invert etc. </em>
+              </div>
+              <div>
+                <span id="selectableSpan152">flex</span
+                ><em>item length, relative to others inside the container </em>
+              </div>
+              <div>
+                <span id="selectableSpan153">flex-basis</span
+                ><em>initial length of a flexible item </em>
+              </div>
+              <div>
+                <span id="selectableSpan154">flex-direction</span
+                ><em>direction of the flexible items </em>
+              </div>
+              <div>
+                <span id="selectableSpan155">flex-flow</span
+                ><em>shorthand for flex-direction and flex-wrap </em>
+              </div>
+              <div>
+                <span id="selectableSpan156">flex-grow</span
+                ><em>how much the item will grow relative other items </em>
+              </div>
+              <div>
+                <span id="selectableSpan157">flex-shrink</span
+                ><em>how to shrink the item relative to other items </em>
+              </div>
+              <div>
+                <span id="selectableSpan158">flex-wrap</span
+                ><em>wrap flexible items </em>
+              </div>
+              <div>
+                <span id="selectableSpan159">float</span
+                ><em>float elements left or right </em>
+              </div>
+              <div>
+                <span id="selectableSpan160">font</span
+                ><em>all font properties in one line </em>
+              </div>
+              <div>
+                <span id="selectableSpan161">@font-face</span
+                ><em>declare non-web-safe fonts</em>
+              </div>
+              <div>
+                <span id="selectableSpan162">font-family</span
+                ><em>font of the element </em>
+              </div>
+              <div>
+                <span id="selectableSpan163">font-size</span><em>font size </em>
+              </div>
+              <div>
+                <span id="selectableSpan164">font-size-adjust</span
+                ><em
+                  >control font size if the first declared option is not
+                  available
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan165">font-stretch</span
+                ><em>widen or narrow text </em>
+              </div>
+              <div>
+                <span id="selectableSpan166">font-style</span
+                ><em>font style: normal, italic, oblique </em>
+              </div>
+              <div>
+                <span id="selectableSpan167">font-variant</span
+                ><em>set small-caps </em>
+              </div>
+              <div>
+                <span id="selectableSpan168">font-weight</span
+                ><em>use bold or thin characters </em>
+              </div>
+              <div>
+                <span id="selectableSpan169">hanging-punctuation</span
+                ><em
+                  >can a punctuation mark be placed outside the line box?
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan170">height</span
+                ><em>height of the element </em>
+              </div>
+              <div>
+                <span id="selectableSpan171">justify-content</span
+                ><em
+                  >justifies flexible container's items horizontally if
+                  necessary
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan172">@keyframes</span
+                ><em>specifies the animation code </em>
+              </div>
+              <div>
+                <span id="selectableSpan173">left</span
+                ><em>left offset for relative and absolute elements </em>
+              </div>
+              <div>
+                <span id="selectableSpan174">letter-spacing</span
+                ><em>space between characters </em>
+              </div>
+              <div>
+                <span id="selectableSpan175">line-height</span
+                ><em>line height of text or inline-block elements</em>
+              </div>
+              <div>
+                <span id="selectableSpan176">list-style</span
+                ><em>all list properties in one line </em>
+              </div>
+              <div>
+                <span id="selectableSpan177">list-style-image</span
+                ><em>replace the list item marker with an image </em>
+              </div>
+              <div>
+                <span id="selectableSpan178">list-style-position</span
+                ><em>list item markers inside or outside the content flow </em>
+              </div>
+              <div>
+                <span id="selectableSpan179">list-style-type</span
+                ><em>set the type of the list item marker </em>
+              </div>
+              <div>
+                <span id="selectableSpan180">margin</span
+                ><em
+                  >set the top, right, bottom and left margins in one line
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan181">margin-bottom</span
+                ><em>bottom margin </em>
+              </div>
+              <div>
+                <span id="selectableSpan182">margin-left</span
+                ><em>left margin </em>
+              </div>
+              <div>
+                <span id="selectableSpan183">margin-right</span
+                ><em>right margin </em>
+              </div>
+              <div>
+                <span id="selectableSpan184">margin-top</span
+                ><em>margin top </em>
+              </div>
+              <div>
+                <span id="selectableSpan185">max-height</span
+                ><em>maximum height of element </em>
+              </div>
+              <div>
+                <span id="selectableSpan186">max-width</span
+                ><em>maximum width of element </em>
+              </div>
+              <div>
+                <span id="selectableSpan187">@media</span
+                ><em>see media queries </em>
+              </div>
+              <div>
+                <span id="selectableSpan188">min-height</span
+                ><em>minimum height </em>
+              </div>
+              <div>
+                <span id="selectableSpan189">min-width</span
+                ><em>minimum width </em>
+              </div>
+              <div>
+                <span id="selectableSpan190">nav-down</span
+                ><em
+                  >where to navigate when the the arrow-down button is pressed
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan191">nav-index</span
+                ><em>sets sequential navigation order </em>
+              </div>
+              <div>
+                <span id="selectableSpan192">nav-left</span
+                ><em
+                  >where to navigate when the the arrow-left button is pressed
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan193">nav-right</span
+                ><em
+                  >where to navigate when the the arrow-right button is pressed
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan194">nav-up</span
+                ><em
+                  >where to navigate when the the arrow-up button is pressed
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan195">opacity</span
+                ><em>transparency level of an element </em>
+              </div>
+              <div>
+                <span id="selectableSpan196">order</span
+                ><em>reorder elements in a container </em>
+              </div>
+              <div>
+                <span id="selectableSpan197">outline</span
+                ><em>drow an outer border around elements </em>
+              </div>
+              <div>
+                <span id="selectableSpan198">outline-color</span
+                ><em>outline color </em>
+              </div>
+              <div>
+                <span id="selectableSpan199">outline-offset</span
+                ><em>gap between the element and the outline </em>
+              </div>
+              <div>
+                <span id="selectableSpan200">outline-style</span
+                ><em>outline style </em>
+              </div>
+              <div>
+                <span id="selectableSpan201">outline-width</span
+                ><em>outline width </em>
+              </div>
+              <div>
+                <span id="selectableSpan202">overflow</span
+                ><em
+                  >hide, display or scroll if the content overflows its
+                  container
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan203">overflow-x</span
+                ><em>horizontal overflow </em>
+              </div>
+              <div>
+                <span id="selectableSpan204">overflow-y</span
+                ><em>vertical overflow </em>
+              </div>
+              <div>
+                <span id="selectableSpan205">padding</span
+                ><em>padding between the element border and content</em>
+              </div>
+              <div>
+                <span id="selectableSpan206">padding-bottom</span
+                ><em>padding bottom </em>
+              </div>
+              <div>
+                <span id="selectableSpan207">padding-left</span
+                ><em>padding left </em>
+              </div>
+              <div>
+                <span id="selectableSpan208">padding-right</span
+                ><em>padding right </em>
+              </div>
+              <div>
+                <span id="selectableSpan209">padding-top</span
+                ><em>padding top </em>
+              </div>
+              <div>
+                <span id="selectableSpan210">page-break-after</span
+                ><em>adds page break after an element </em>
+              </div>
+              <div>
+                <span id="selectableSpan211">page-break-before</span
+                ><em>adds page break before an element </em>
+              </div>
+              <div>
+                <span id="selectableSpan212">page-break-inside</span
+                ><em>allow page break inside an element </em>
+              </div>
+              <div>
+                <span id="selectableSpan213">perspective</span
+                ><em
+                  >how many pixels the 3D element is placed from the view
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan214">perspective-origin</span
+                ><em>where is the 3D element based in the x- and y-axis </em>
+              </div>
+              <div>
+                <span id="selectableSpan215">position</span
+                ><em>positioning type: absolute, fixed, relative, static</em>
+              </div>
+              <div>
+                <span id="selectableSpan216">quotes</span
+                ><em>set quotation marks to wrap an element </em>
+              </div>
+              <div>
+                <span id="selectableSpan217">resize</span
+                ><em>declare resizable elements </em>
+              </div>
+              <div>
+                <span id="selectableSpan218">right</span
+                ><em>right offset for relative and absolute elements </em>
+              </div>
+              <div>
+                <span id="selectableSpan219">tab-size</span
+                ><em>tab character space length </em>
+              </div>
+              <div>
+                <span id="selectableSpan220">table-layout</span
+                ><em>table layout algorithm </em>
+              </div>
+              <div>
+                <span id="selectableSpan221">text-align</span
+                ><em>horizontal alignment of text </em>
+              </div>
+              <div>
+                <span id="selectableSpan222">text-align-last</span
+                ><em>horizontal alignment of last line of text </em>
+              </div>
+              <div>
+                <span id="selectableSpan223">text-decoration</span
+                ><em>overline, underline or line-through the text </em>
+              </div>
+              <div>
+                <span id="selectableSpan224">text-indent</span
+                ><em>indentation of the first line of the text </em>
+              </div>
+              <div>
+                <span id="selectableSpan225">text-overflow</span
+                ><em>the way how overflowed content is marked (ellipsis) </em>
+              </div>
+              <div>
+                <span id="selectableSpan226">text-shadow</span
+                ><em>text shadow </em>
+              </div>
+              <div>
+                <span id="selectableSpan227">text-transform</span
+                ><em>capitalization of text </em>
+              </div>
+              <div>
+                <span id="selectableSpan228">top</span
+                ><em>top offset for relative and absolute elements </em>
+              </div>
+              <div>
+                <span id="selectableSpan229">transform</span
+                ><em>2D 3D transformation. See widget. </em>
+              </div>
+              <div>
+                <span id="selectableSpan230">transform-origin</span
+                ><em>changes the position of transformed elements </em>
+              </div>
+              <div>
+                <span id="selectableSpan231">transform-style</span
+                ><em>render nested elements in 3D </em>
+              </div>
+              <div>
+                <span id="selectableSpan232">transition</span
+                ><em>transition properties in one line </em>
+              </div>
+              <div>
+                <span id="selectableSpan233">transition-delay</span
+                ><em>delay before transition effect start </em>
+              </div>
+              <div>
+                <span id="selectableSpan234">transition-duration</span
+                ><em>transition effect duration </em>
+              </div>
+              <div>
+                <span id="selectableSpan235">transition-property</span
+                ><em>which CSS property is the transition affecting </em>
+              </div>
+              <div>
+                <span id="selectableSpan236">transition-timing-function</span
+                ><em>speed curve of the transition </em>
+              </div>
+              <div>
+                <span id="selectableSpan237">unicode-bidi</span
+                ><em
+                  >should the text be overridden to support more languages
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan238">user-select</span
+                ><em>disable user content selection </em>
+              </div>
+              <div>
+                <span id="selectableSpan239">vertical-align</span
+                ><em>vertical alignment </em>
+              </div>
+              <div>
+                <span id="selectableSpan240">visibility</span
+                ><em>visibility:hidden elements leave a gap </em>
+              </div>
+              <div>
+                <span id="selectableSpan241">white-space</span
+                ><em>how are white-spaces handled </em>
+              </div>
+              <div>
+                <span id="selectableSpan242">width</span
+                ><em>width of an element </em>
+              </div>
+              <div>
+                <span id="selectableSpan243">word-break</span
+                ><em
+                  >text breaking rules when text reaches the end of the
+                  container
+                </em>
+              </div>
+              <div>
+                <span id="selectableSpan244">word-spacing</span
+                ><em>size of white space between words </em>
+              </div>
+              <div>
+                <span id="selectableSpan245">word-wrap</span
+                ><em>break long words and wrap onto the next line </em>
+              </div>
+              <div>
+                <span id="selectableSpan246">z-index</span
+                ><em>stack order of the element </em>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-item grid-5">
+        <div class="title">
+          <h5>Media Queries</h5>
+        </div>
+        <div class="content">
+          <p class="div-section">Media types</p>
+          all, print, screen, speech
+          <p class="div-section">Night / dark mode</p>
+          <pre id="selectable11" onclick='selectText("selectable11")'>
+@media (prefers-color-scheme: dark) { ... }</pre
+          >
+          <p class="div-section">Print style</p>
+          <pre id="selectable10" onclick='selectText("selectable10")'>
+@media print { ... }</pre
+          >
+          <p class="div-section">Viewport width smaller OR height smaller</p>
+          <pre
+            id="selectable9"
+            onclick='selectText("selectable9")'
+          ><span style="color:#800080; ">@</span><span style="color:#004a43; ">media</span> <span style="color:#004a43; ">screen and (max-width: 600px),
+             (max-height: 500px) </span><span style="color:#800080; ">{</span>
+</pre>
+          <p class="div-section">Viewport is 480 pixels or smaller</p>
+          <pre
+            style="color: #000"
+            id="selectable8"
+            onclick='selectText("selectable8")'
+          ><span style="color:#0100b6;font-weight:700">@media</span> <span style="color:#06960e;font-weight:700">screen</span> <span style="color:#0100b6;font-weight:700">and</span> (<span style="color:#6d79de;font-weight:700">max-width</span>: <span style="color:#cd0000;font-style:italic">480<span style="color:#0100b6;font-weight:700">px</span></span>) { }
+</pre>
+          <p class="div-section">Media features</p>
+          <div class="descriptionListing noscroller">
+            <div>
+              <span
+                id="selectableSpan247"
+                onclick='selectText("selectableSpan247")'
+                >width </span
+              ><em>viewport width </em>
+            </div>
+            <div>
+              <span
+                id="selectableSpan248"
+                onclick='selectText("selectableSpan248")'
+                >height </span
+              ><em>viewport height</em>
+            </div>
+            <div>
+              <span
+                id="selectableSpan249"
+                onclick='selectText("selectableSpan249")'
+                >orientation </span
+              ><em>orientation of the viewport </em>
+            </div>
+            <div>
+              <span
+                id="selectableSpan250"
+                onclick='selectText("selectableSpan250")'
+                >aspect-ratio </span
+              ><em>ratio between width &amp; height </em>
+            </div>
+            <div>
+              <span
+                id="selectableSpan251"
+                onclick='selectText("selectableSpan251")'
+                >color </span
+              ><em>number of bits per color </em>
+            </div>
+            <div>
+              <span
+                id="selectableSpan252"
+                onclick='selectText("selectableSpan252")'
+                >color-index </span
+              ><em>number of displayable colors</em>
+            </div>
+            <div>
+              <span
+                id="selectableSpan253"
+                onclick='selectText("selectableSpan253")'
+                >monochrome </span
+              ><em>color on greyscale device </em>
+            </div>
+            <div>
+              <span
+                id="selectableSpan254"
+                onclick='selectText("selectableSpan254")'
+                >resolution </span
+              ><em>resolution of the device </em>
+            </div>
+            <div>
+              <span
+                id="selectableSpan255"
+                onclick='selectText("selectableSpan255")'
+                >scan </span
+              ><em>scanning process of the device </em>
+            </div>
+            <div>
+              <span
+                id="selectableSpan256"
+                onclick='selectText("selectableSpan256")'
+                >grid </span
+              ><em>device is a grid or bitmap</em>
+            </div>
+          </div>
+          <p class="div-section">Syntax</p>
+          <pre
+            style="color: #000"
+            id="selectable6"
+            onclick='selectText("selectable6")'
+          > <span style="color:#0100b6;font-weight:700">@media</span> not|only <span style="color:#06960e;font-weight:700">mediatype</span> 
+          <span style="color:#0100b6;font-weight:700">and</span> (<span style="color:#6d79de;font-weight:700">media feature</span>) {
+   CSS Code }
+          </pre>
+
+          Link external file:
+          <pre
+            style="background: #fff; color: #000"
+            id="selectable7"
+            onclick='selectText("selectable7")'
+          ><span style="color:#1c02ff">&lt;<span style="font-weight:700">link</span> <span style="font-style:italic">rel</span>=<span style="color:#d80800">"stylesheet"</span> 
+          <span style="font-style:italic">media</span>=<span style="color:#06960e;font-weight:700">mediatype</span> <span style="color:#0100b6;font-weight:700">and|not|only</span> 
+          (<span style="color:#6d79de;font-weight:700">media feature</span> <span style="font-style:italic">href</span>=
+          <span style="color:#d80800">"mystylesheet.css"</span>&gt;</span>
+          </pre>
+        </div>
+      </div>
+      <div class="grid-item grid-6">
+        <div class="title">
+          <h5>Reset CSS</h5>
+        </div>
+        <div class="content">
+          <span style="display: block; margin-left: 5px">*</span>
+          <span style="display: block; margin-left: 15px">{</span>
+          <span style="display: block; margin-left: 10px">margin: 0;</span>
+          <span style="display: block; margin-left: 10px">padding: 0;</span>
+          <span style="display: block; margin-left: 10px"
+            >box-sizing: border-box;</span
+          >
+          <span style="display: block; margin-left: 5px">}</span>
+        </div>
+      </div>
+    </section>
+   
+      <footer>
+        <h1 class="footer">&copy; 2023 by Leona Rose Ilao</h1>
+        <p class="footer">All rights reserved.</p>
+      </footer>
+ 
+      
+    <script src="https://cdn.jsdelivr.net/npm/@simonwep/pickr/dist/pickr.min.js"></script>
+    <script>
+      let panel = document.getElementById('panel');
+      // Simple example, see optional options for more configuration.
+      const pickr = Pickr.create({
+        el: '.color-picker',
+        theme: 'classic', // or 'monolith', or 'nano'
+
+        swatches: [
+          'rgba(244, 67, 54, 1)',
+          'rgba(233, 30, 99, 0.95)',
+          'rgba(156, 39, 176, 0.9)',
+          'rgba(103, 58, 183, 0.85)',
+          'rgba(63, 81, 181, 0.8)',
+          'rgba(33, 150, 243, 0.75)',
+          'rgba(3, 169, 244, 0.7)',
+          'rgba(0, 188, 212, 0.7)',
+          'rgba(0, 150, 136, 0.75)',
+          'rgba(76, 175, 80, 0.8)',
+          'rgba(139, 195, 74, 0.85)',
+          'rgba(205, 220, 57, 0.9)',
+          'rgba(255, 235, 59, 0.95)',
+          'rgba(255, 193, 7, 1)',
+        ],
+
+        components: {
+          // Main components
+          preview: true,
+          opacity: true,
+          hue: true,
+
+          // Input / output Options
+          interaction: {
+            hex: true,
+            rgba: true,
+            hsla: true,
+            hsva: true,
+            cmyk: true,
+            input: true,
+            clear: true,
+            save: true,
+          },
+        },
+      });
+
+      pickr.on('change', (...args) => {
+        let color = args[0].toRGBA();
+        this.panel.style.backgroundColor = `rgba(${color[0]},${color[1]},${color[2]},${color[3]})`;
+      });
+    </script>
+
+<script src="script.js"></script>
+
+  </body>
+</html>
