@@ -749,7 +749,8 @@ body {
   }
   .travel-icon{
     float: right;
-    padding-right: 180px; 
+    padding-right: 250px; 
+    padding-bottom: 50px;;
   }
 }
 
